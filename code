@@ -1,0 +1,54 @@
+import discord
+Client=discord.Client()
+from discord.ext import commands
+
+
+client=commands.Bot(command_prefix="{")
+
+@client.event
+async def on_ready():
+    print("Bot is ready")
+
+@client.command()
+async def hello(ctx):
+    await ctx.send("hi")
+
+@client.command()
+async def add(ctx, num1:int, num2:int):
+    await ctx.send(num1+num2)
+
+@client.command()
+async def subtract(ctx, num1:int, num2:int):
+    await ctx.send(num1-num2)
+
+@client.command()
+async def multiply(ctx, num1:int, num2:int):
+    await ctx.send(num1*num2)
+
+@client.command()
+async def divide(ctx, num1:int, num2:int):
+    await ctx.send(num1/num2)
+
+@client.command()
+async def shush(ctx):
+    await ctx.send("https://tenor.com/view/niko-omilana-shush-gif-21311909")
+
+@client.event 
+async def on_message(msg): 
+    if msg.content == "sus":
+        await msg.channel.send("https://tenor.com/view/among-us-red-sus-suspect-among-gif-19597730")
+
+@client.event 
+async def on_message(msg): 
+    if msg.content == 'good morning':
+        await msg.channel.send('Good morning laddies :)')
+
+@client.event 
+async def on_message(msg): 
+    if msg.content == 'smart':
+        await msg.channel.send('https://c.tenor.com/7HUogy7rXs4AAAAC/feel-me-think-about-it.gif')
+
+
+
+
+client.run("INSERT YOUR BOT SECRET NUMBER THINGO HERE")
