@@ -14,12 +14,4 @@ I must state that the discord bot token is not shown
 THIS IS EXTREMELY IMPORTANT
  
 If anyone were to find this discord bot token they could take control of the entire project, possibly putting me at risk as I am the owner of the bot
-
-FOR FUTURE NOTICE
-
-If you are to make a bot, put in the token where I have written "INSERT YOUR BOT SECRET NUMBER THINGO HERE".
-
-AGAIN, DO NOT SHOW THIS CODE TO ANYONE. AT AN EXTREME, THIS COULD LEAD TO SOME LAWSUIT
-
-stay safe
 *************************
